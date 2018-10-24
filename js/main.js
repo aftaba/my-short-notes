@@ -11,10 +11,10 @@ jQuery(document).ready(function( $ ) {
         }
         
         notes = notes.replace(/(^[\s]+|[\s]+$)/g, '' );
-        notes = notes.replace(/(?:\r\n|\r|\n)/g, '<br>');
+        notes = notes.replace(/\n/g, "<br />");
         
         var data = {
-            'notes' : $('#my-short-notes').val(),
+            'notes' : notes,
             'csrf': $('#csrf-token').val() 
         };
 
