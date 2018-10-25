@@ -1,12 +1,6 @@
 <?php
-
-
-include 'apis/misc-function.php';
+include 'functions.php';
 $token = set_csrf_token();
-// Check if token time is valid
-// if ( $_SESSION['token_time'] > time() ) {
-//     unset( $_SESSION );
-// }
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +8,7 @@ $token = set_csrf_token();
 
 <head>
   <meta charset="utf-8">
-  <title>My Short Notes</title>
+  <title>My Short Notes | MSNS.ML </title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -52,11 +46,9 @@ $token = set_csrf_token();
             </div>
         </div>
     </section>
-    <!-- JavaScript Libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <!-- Template Main Javascript File -->
-    <script src="js/main.js"></script>
+    
+    <script src="<?php echo PROJECT_PATH; ?>assets/lib/jquery/jquery.min.js"></script>
+    <script src="<?php echo PROJECT_PATH; ?>assets/lib/wow/wow.min.js"></script>
+    <script src="<?php echo PROJECT_PATH; ?>assets/js/main.js"></script>
 </body>
-
 </html>

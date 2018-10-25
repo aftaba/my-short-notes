@@ -19,7 +19,7 @@ $response = array();
 if ( $conn->query( $sql ) === TRUE) {
     $response["code"] = 200;
     $response["message"] = "Notes created successfully";
-    $response["slug"] = PROJECT_PATH.'view.php?slug='.$slug;
+    $response["slug"] = PROJECT_PATH.'view/'.$slug;
 } else {
     $response["code"] = 500;
     $response["message"] = "Something went wrong";
