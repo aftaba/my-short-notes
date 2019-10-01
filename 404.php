@@ -1,5 +1,6 @@
 <?php
 include 'functions.php';
+// creates the token
 $token = set_csrf_token();
 ?>
 
