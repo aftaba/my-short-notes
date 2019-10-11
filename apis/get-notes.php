@@ -1,4 +1,5 @@
 <?php
+
 include( "db-conf.php" );
 include( "misc-function.php" );
 
@@ -19,4 +20,3 @@ if ( $result->num_rows == 1 ) {
 
 $conn->close();
 echo $response["notes"];
-
