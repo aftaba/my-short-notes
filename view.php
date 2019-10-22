@@ -32,7 +32,7 @@ $token = set_csrf_token();
 <body>
 	<section id="intro">
 		<div class="intro-container wow">
-			<h1 class="mb-4 pb-0">My Short <span>Notes</span></h1>
+			<h1 class="mb-4 pb-0">My Short Notes<span>Notes</span></h1>
 			<div class="container">
 				<?php
 				$params = $_SERVER['REQUEST_URI'];
