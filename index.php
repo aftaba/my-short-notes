@@ -30,7 +30,7 @@ $token = set_csrf_token();
 <body>
     <section id="intro">
         <div class="intro-container wow">
-            <h1 class="mb-4 pb-0">My Short <span>Notes</span></h1>
+            <h1 class="mb-4 pb-0">My Short Notes <span>Notes</span></h1>
             <form method="post" id="add-new-note-form">
                 <div class="form-group">
                     <textarea class="form-control" id="my-short-notes" rows="10" cols="50"></textarea>
